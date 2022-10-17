@@ -57,7 +57,6 @@ li, ul, ol {
 }
 
 a:link { color: #fff; text-decoration: none; }
-a:visited { color: #000;  text-decoration: none;  }
 a:hover { color: #CCC;  text-decoration: none; }
 a:active { color: #999; text-decoration: none; }
 
