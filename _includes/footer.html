@@ -1,50 +1,21 @@
-<footer class="site-footer">
-
-  <div class="wrapper">
-
-    <div class="site-navigation">
+<footer class="footer has-text-white has-background-grey">
+  <div class="container">
       
-      <p><strong>Site Map</strong></p>
-      <ul class="pages">
-        {% for page in site.pages %}
-        {% if page.title and page.main_nav != false %}
-          <li class="nav-link"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-        {% endif %}
-        {% endfor %}
-      </ul>
-    </div>
+      {% if site.footer_menu %}
+      <div class="columns is-multiline">
+          {% for item in site.data[site.footer_menu] %}
+          <div class="column has-text-centered">
+              <div>
+                  <a href="{{ item.link | relative_url }}" class="link">{{ item.name }}</a>
+              </div>
+          </div>
+          {% endfor %}
+      </div>
+      {% endif %}
 
-    <div class="site-contact">
-
-      <p><strong>Contact</strong></p>
-      <ul class="social-media-list">
-        <li>
-          <a href="mailto:{{ site.email }}">
-            <i class="fa fa-envelope-o"></i>
-            <span class="username">{{ site.email }}</span>
-          </a>
-        </li>
-
-        {% for social in site.social %}
-          {% if social.url != null %}
-          <li>
-            <a href="{{ social.url }}" title="{{ social.desc }}">
-              <i class="fa fa-{{ social.icon }}"></i>
-              <span class="username">{% if social.username %}{{ social.username }}{% else %}{{ social.name }}{% endif %}</span>
-            </a>
-          </li>
-          {% endif %}
-        {% endfor %}
-
-      </ul>
-    </div>
-
-    <div class="site-signature">
-      <p class="rss-subscribe text"><strong>Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></strong></p>
-      <p class="text">{{ site.description }}</p>
-    </div>
-
+      <div class="content is-small has-text-centered">
+        <p class="text">&copy; All work is copyright the artist, no reproduction without permission.<br />
+         <br />site by <a href="https://eyedivision.com" class="has-text-white">Eye Division</a></p>
+      </div>
   </div>
-
 </footer>
-

@@ -1,8 +1,10 @@
-- title: "Posts"
-  href: "/posts/"
-  
-- title: "Projects"
-  href: "/projects/"
-  
-- title: "About"
-  href: "/about/"
+- title: Sculpture gallery
+  href: /sculpture/
+- title: 'Original models'
+  href: /original-models/
+- title: Animals
+  href: /animals/
+- title: How I do the portraits
+  href: /how-i-do-the-portraits/
+- title: Commissions
+  href: /commissions/

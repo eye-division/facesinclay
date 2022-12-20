@@ -1,0 +1,157 @@
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-seo-tag
+  - kramdown-parser-gfm
+  - jekyll-redirect-from
+
+exclude: 
+  - Gemfile
+  - clean-theme.gemspec
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Site settings
+lang: en
+title: Faces in Clay
+subtitle: UK artist
+tagline: UK artist
+permalink: pretty
+name: Faces in Clay
+theme: bulma-clean-theme
+
+# Image CDN
+imagecdn:
+  staging: "https://ed-facesinclay.imgix.net" 
+  production: "https://ed-facesinclay.imgix.net"
+
+description: Web site for Faces in Clay
+# Base URL of site (i.e. /blog). It should always start with a slash,
+# and never end with a slash. Set it to a blank value if hosting at the
+# root of your server.
+baseurl: ""
+# the base hostname & protocol for your site
+url: "https://www.facesinclay.com/"
+logo:
+email: support@eyedivision.com
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+
+# Pagination for Jekyll 3
+paginate: 5
+paginate_path: "/blog/page:num"
+
+# Image CDN
+imagecdn:
+  staging: 
+  production: 
+
+# Collections Example
+collections:
+  gallery:
+    output: true
+    layout: gallery
+  products: 
+    output: true
+    layout: product
+    image: https://via.placeholder.com/800x600
+    show_sidebar: false
+
+# Defaults Example
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      show_sidebar: true
+      hero_image: /assets/images/header-sea.jpg
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      author: "Lucy Tennyson"
+      layout: post
+      image: 
+      show_sidebar: true
+  -
+    scope:
+        path: ""
+        type: "gallery"
+    values:
+        layout: "gallery"
+
+footer_menu: example_footer_menu
+
+# Cloudcannon dashboard / Explore options
+#_explore:
+#  groups:
+#    - heading: Blogging
+#      collections:
+#        - posts
+#        - drafts
+
+# Disqus comments
+# disqus_shortname:
+
+# Google analytics
+ga_tracking_id: UA-60909331-1
+
+# Social icons and sharing options
+#
+# Social settings are used in two places:
+# * In the footer, as links to your personal profiles
+# * After each blog post for sharing widgets
+#
+# Example:
+#
+# social:
+#   - name: Twitter                         # Name of the service
+#     icon: twitter                         # Font Awesome icon to use (minus fa- prefix)
+#     username: "@TheBenCentra"             # (User) Name to display in the footer link
+#     url: https://twitter.com/TheBenCentra # URL of your profile (leave blank to not display in footer)
+#     desc: Follow me on Twitter            # Description to display as link title, etc
+#     share: true                           # Include in the "Share" section of posts
+social:
+
+  - name: Facebook
+    icon: icon-facebook_sign
+    username:
+    url:
+    desc: Like on Facebook
+    share: true
+
+  - name: Instagram
+    icon: icon-instagram
+    username:
+    url:
+    desc: Follow me on Instagram
+    share: false
+
+  - name: Twitter
+    icon: icon-twitter_sign
+    username:
+    url:
+    desc: Follow us on Twitter
+    share: true
+
+# Social sharing protocols
+# These are for automatically generating sharing metadata for FB and Twitter
+# OS Protocol is for sharing the source of your site, if you're interested. For more, see osprotocol.com
+protocols:
+    fb_image: "/assets/logo.png"
+    fb_image_width: 612
+    fb_image_height: 605
+    fb_image_type: "image/png"
+
+    twitter_image: "/assets/logo.png"
+

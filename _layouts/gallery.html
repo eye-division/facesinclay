@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<article>
+  <section>
+    {% if page.description_markdown %}{{ page.description_markdown | markdownify }}{% endif %}
+  </section>
+
+  {% if page.images[0].image_path %}
+  <section class="gallery columns is-multiline is-mobile">
+    {% for image in page.images %}
+      {% if image.image_path %}
+        <div class="column is-one-quarter-desktop is-one-third-tablet is-half-mobile has-text-centered">
+          <a href="{% include imgpath.html src=image.image_path max-w=1280 %}" class="galleryphoto" data-lightbox="gallery" data-title="{{ image.image_title }} - {{ image.image_description_markdown | markdownify }}">
+            {% include img.html src=image.image_path width=200 height=200 fit=crop alt=image.image_title %}
+          </a>
+          <figcaption class="">{{ image.image_title }}</figcaption>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </section>
+  {% endif %}
+
+
+
+</article>
