@@ -18,40 +18,44 @@ images:
   - image_path: /pictures/549413b8a24fb.jpg
     image_title: Sculpture 7
     image_description_markdown: >-
-      
-  - image_path: /pictures/5494137ac1666.jpg
+
+  - image_path: /pictures/54941363c2ed5.jpg
     image_title: Untitled
+    image_description_markdown: >-      
+
+  - image_path: /pictures/5494137ac1666.jpg
+    image_title: Sculpture 1
     image_description_markdown: >-
       
   - image_path: /pictures/549413aadeaa8.jpg
-    image_title: Mo Tat School
+    image_title: Sculpture 6
     image_description_markdown: >-
       
   - image_path: /pictures/5494139f92f2e.jpg
-    image_title: 
+    image_title: Sculpture 5
     image_description_markdown: >-
      
   - image_path: /pictures/5494136fa3bfd.jpg
-    image_title: 
+    image_title: Sculpture 2
     image_description_markdown: >-
       
   - image_path: /pictures/549413559f1d6.jpg
-    image_title: 
+    image_title: Sculpture 3
     image_description_markdown: >-
       
   - image_path: /pictures/549413c4544c7.jpg
-    image_title: 
+    image_title: Sculpture 8
     image_description_markdown: >-
       
   - image_path: /pictures/54941387999ac.jpg
-    image_title: 
+    image_title: Sculpture 4
     image_description_markdown: 
   - image_path: /pictures/54941393c1d3b.jpg
-    image_title: 
+    image_title: Sculpture 4
     image_description_markdown: >-
     
   - image_path: /pictures/549414cd04537.jpg
-    image_title: 
+    image_title: Exhibition view
     image_description_markdown: 
      
 
