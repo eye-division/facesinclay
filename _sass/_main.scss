@@ -16,7 +16,7 @@ $hero-darken: $dark !default;
 @import "syntax";
 @import "showcase";
 @import "../node_modules/bulma-block-list/src/block-list.scss";
-
+@import "flexslider";
 .gh-sponsor {
   color: #ea4aaa;
 }
@@ -28,4 +28,17 @@ body {
  
 #wrapper {
   flex: 1;
+}
+.gallery {
+
+  a:link,
+  a:visited {
+    color: white;
+    text-decoration: underline;
+    &:hover,
+    &:focus {
+      color: black;
+    }
+  }
+
 }

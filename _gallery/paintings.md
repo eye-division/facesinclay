@@ -16,39 +16,31 @@ thumb_crop: false
 images:
   - image_path: /pictures/paintings_0000.jpg
     image_title: 
-    image_description_markdown: >-
-      
+    image_description_markdown:
   - image_path: /pictures/paintings_0001.jpg
     image_title: 
-    image_description_markdown: >-
-      
+    image_description_markdown:
   - image_path: /pictures/paintings_0002.jpg
     image_title: 
-    image_description_markdown: >-
-      
+    image_description_markdown:
   - image_path: /pictures/paintings_0003.jpg
     image_title: 
-    image_description_markdown: >-
-     
+    image_description_markdown:
   - image_path: /pictures/paintings_0004.jpg
     image_title: 
-    image_description_markdown: >-
-      
+    image_description_markdown:
   - image_path: /pictures/paintings_0005.jpg
     image_title: 
-    image_description_markdown: >-
-      
+    image_description_markdown:
   - image_path: /pictures/paintings_0006.jpg
     image_title: 
-    image_description_markdown: >-
-      
+    image_description_markdown:
   - image_path: /pictures/paintings_0007.jpg
     image_title: 
     image_description_markdown: 
   - image_path: /pictures/paintings_0008.jpg
     image_title: 
-    image_description_markdown: >-
-    
+    image_description_markdown:
   - image_path: /pictures/paintings_0009.jpg
     image_title: 
     image_description_markdown: 

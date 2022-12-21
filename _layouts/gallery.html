@@ -2,10 +2,10 @@
 layout: default
 ---
 
-<article>
-  <section>
+<article class="gallery">
+  <div class="block has-text-centered">
     {% if page.description_markdown %}{{ page.description_markdown | markdownify }}{% endif %}
-  </section>
+  </div>
 
   {% if page.images[0].image_path %}
   <section class="gallery columns is-multiline is-mobile">
@@ -15,7 +15,11 @@ layout: default
           <a href="{% include imgpath.html src=image.image_path max-w=1280 %}" class="galleryphoto" data-lightbox="gallery" data-title="{{ image.image_title }} - {{ image.image_description_markdown | markdownify }}">
             {% include img.html src=image.image_path width=200 height=200 fit=crop alt=image.image_title %}
           </a>
-          <figcaption class="">{{ image.image_title }}</figcaption>
+          <figcaption class="">{{ image.image_title }} 
+            {% if image.image_description_markdown %}
+              - {{ image.image_description_markdown | markdownify }}
+            {% endif %}
+        </figcaption>
         </div>
       {% endif %}
     {% endfor %}
